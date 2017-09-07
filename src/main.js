@@ -2,13 +2,12 @@ import Vue from 'vue';
 
 import MintUI from 'mint-ui';
 import 'mint-ui/lib/style.css';
+
 import API from './api/API.js';
 import VueResource from 'vue-resource';
 import router from './router/router.js';
-// import './assets/css/test.less';//初始化样式
-// import './assets/css/flex.css';//flex兼容样式
-// import './assets/css/like.css';//公共样式
 
+import './assets/css/reset.css';
 
 Vue.use(MintUI);
 Vue.use(VueResource);

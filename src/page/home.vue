@@ -1,6 +1,10 @@
 <template>
 	<div id="first" class="wrapper">
-		首页
+		<mt-swipe :auto="0">
+		  <mt-swipe-item><img src="../assets/images/banner.jpg" /></mt-swipe-item>
+		  <mt-swipe-item><img src="../assets/images/banner.jpg" /></mt-swipe-item>
+		  <mt-swipe-item><img src="../assets/images/banner.jpg" /></mt-swipe-item>
+		</mt-swipe>
 	</div>
 </template>
 
@@ -32,9 +36,13 @@
 		}
 	}
 </script>
-<style lang="scss">
+<style lang="less">
 
-	#first{
-
+	.mint-swipe-items-wrap > div {
+		display: block;
+		position: relative;
+		img {
+			width: 100%
+		}
 	}
 </style>

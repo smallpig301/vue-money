@@ -22,9 +22,6 @@ const routes = [
 	},{
 	    path: '/forgetpwd',
 	    component: forgetpwd
-	},{
-	    path: '/roles.html',
-	    component: roles
 	}
 ];
 
