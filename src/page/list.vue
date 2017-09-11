@@ -1,50 +1,17 @@
 <template>
-    <div id="first" class="wrapper">
+    <div class="wrapper">
         <div class="wrap-box">
-            
-            <pic-round></pic-round>
-            
-            <div class="category">
-                <a href="#">
-                    <div><img src="../assets/images/category1.png"></div>
-                    <div>电商贷</div>
-                </a>
-                <a href="#">
-                    <div><img src="../assets/images/category2.png"></div>
-                    <div>工资贷</div>
-                </a>
-                <a href="#">
-                    <div><img src="../assets/images/category3.png"></div>
-                    <div>学生贷</div>
-                </a>
-                <a href="#">
-                    <div><img src="../assets/images/category4.png"></div>
-                    <div>身份证借贷</div>
-                </a>
-                <a href="#">
-                    <div><img src="../assets/images/category5.png"></div>
-                    <div>小额极速贷</div>
-                </a>
-                <a href="#">
-                    <div><img src="../assets/images/category6.png"></div>
-                    <div>大额借贷</div>
-                </a>
-                <a href="#">
-                    <div><img src="../assets/images/category7.png"></div>
-                    <div>信用卡VIP</div>
-                </a>
-                <a href="#">
-                    <div><img src="../assets/images/category8.png"></div>
-                    <div>贷款百科</div>
-                </a>
+            <div class="tab-nav">
+            	<a href="#">
+            		<div>贷款金额<span></span></div>
+            	</a>
+            	<a href="#">
+            		<div>贷款利率<span></span></div>
+            	</a>
             </div>
-            <div class="block-title">
-                <span>热门推荐</span>
-            </div>
+
             <div class="list-block">
-                <hot-list></hot-list>
-                <hot-list></hot-list>
-                <hot-list></hot-list>
+                <lists></lists>
             </div>
         </div>
         <nav-bottom></nav-bottom>
@@ -52,9 +19,8 @@
 </template>
 <script type="text/javascript">
 	import { Storage } from "../assets/js/storage.js";
-	import picRound from "../components/picRound.vue";
 	import navBottom from "../components/navBottom.vue";
-	import hotList from "../components/hotList.vue";
+	import lists from "../components/lists.vue";
 
 
 	export default {
@@ -70,9 +36,8 @@
 	        }
 	    },
 	    components: {
-	    	'pic-round': picRound,
 	    	'nav-bottom': navBottom,
-	    	'hot-list': hotList
+	    	'lists': lists
 	    },
 	    methods: {
 
@@ -91,6 +56,7 @@
     position: absolute;
     padding-bottom: 50px;
     height: 100%;
+    width: 100%;
     overflow: auto;
     z-index: 9;
 }

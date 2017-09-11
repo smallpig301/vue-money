@@ -4,10 +4,11 @@ Vue.use(VueRouter);
 
 // import App from '../App.vue'
 import login from '../page/login.vue'//登录
-import home from '../page/home.vue'//首页
 import register from '../page/register.vue'//注册
 import forgetpwd from '../page/forgetpwd.vue'//忘记密码
 import roles from '../page/roles.vue'//角色选择
+import home from '../page/home.vue'//首页
+import list from '../page/list.vue'//首页
 
 const routes = [
 	{
@@ -22,6 +23,9 @@ const routes = [
 	},{
 	    path: '/forgetpwd',
 	    component: forgetpwd
+	},{
+		path: '/list',
+		component: list
 	}
 ];
 
